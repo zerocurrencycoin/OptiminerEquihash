@@ -1,4 +1,4 @@
-# OptiminerZ/Equihash
+# Optiminer/Equihash
 
 GPU miner for Equihash supporting many coins. A (probably incomplete) list:
 - **Zcash** (-a equihash200_9)
@@ -77,7 +77,8 @@ are net rate, i.e., with fee deducted. What you see is what YOU get!
 ## Usage:
 Run from the archive root directory:
 ```
-$ ./optiminer-equihash -s eu1-zcash.flypool.org:3333 -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password -a equihash200_9
+$ ./optiminer-equihash -s eu1-zcash.flypool.org:3333 -a equihash200_9 \
+                       -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password 
 ```
 
 For a list of all options run with `-h`:

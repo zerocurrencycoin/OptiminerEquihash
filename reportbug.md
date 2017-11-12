@@ -10,16 +10,18 @@ Is it related to some local problem, e.g., is your internet connection working?
 If you observe that some GPU randomly freeze or stop mining this is almost always
 related to a hardware problem. Try changing the risers, switching the order of the GPU,
 search the forum for tips. This is not worth reporting a bug unless it happens
-reproducable with multiple GPUs in multiple rigs.
+reproducable with multiple GPUs in multiple rigs. Most instabilities are caused
+by GPU overheating or being overclocked too much! Using too high intensities can cause
+crashes and may require a reboot to get the GPU into a clean state.
    
 # 2. Collect as much information as possible.
 
 Add at least following information to the bug report:
 
 * Which OS are you using? Exact version.
-* Which version of the miner are you using (shown by `optiminer-zcash --version`).
+* Which version of the miner are you using (shown by `optiminer-equihash --version`).
 * Which graphic driver are you using?
-* What GPUs are you using. Post the output of `optiminer-zcash --list-devices`.
+* What GPUs are you using. Post the output of `optiminer-equihash --list-devices`.
 * How often is this problem happening? Everytime? Sporadically? Related to some other events?
 * What is the expected behavior and what is the actual behavior.
 * Try different settings:
@@ -32,4 +34,4 @@ Add at least following information to the bug report:
 # 3. Open an issue.
 
 If you have followed step 1 and 2 you are ready to open a new Issue here:
-https://github.com/Optiminer/OptiminerZcash/issues/new
+https://github.com/Optiminer/OptiminerEquihash/issues/new
