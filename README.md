@@ -1,16 +1,16 @@
-# OptiminerZ/Zcash
+# OptiminerZ/Equihash
 
-GPU miner for Equihash supporting many coins. A possiblity incomplete list:
-- *Zcash* (-a equihash200_9)
-- *Bitcoin Gold* (-a equihash200_9)
-- *Hush* (-a equihash200_9)
-- *Zero* (-a equihash192_7)
-- *Minexcoin* (-a equihash96_5)
-- *Kommodo* (-a equihash200_9)
+GPU miner for Equihash supporting many coins. A (probably incomplete) list:
+- **Zcash** (-a equihash200_9)
+- **Bitcoin Gold** (-a equihash200_9)
+- **Hush** (-a equihash200_9)
+- **Zero** (-a equihash192_7)
+- **Minexcoin** (-a equihash96_5)
+- **Kommodo** (-a equihash200_9)
 
 This is a replacement for the previous versions of separate miners for Zcash and Zero.
-Unifying all three variants of equihash ([N,K]=[200,9] / [192,7] / [96,6]) into a single binary
-simplifies further development on all variants. 
+Unifying all three variants of Equihash used by different coins ([N,K]=[200,9] / [192,7] / [96,6])
+into a single binary simplifies further development on all variants. 
 
 Note that depending on the Equihash parameters the amount of GPU memory needed varies a lot:
 - equihash200_9: >512MB
@@ -58,35 +58,34 @@ The miner contains a 1.0% fee for supporting the developer. All shown hash rates
 are net rate, i.e., with fee deducted. What you see is what YOU get!
 
 #### AMD R9 Nano
-Equihash200_9: 450 S/s (with powertune +50)
-Equihash96_5: 10200 S/s
+- Equihash200_9: 450 S/s (with powertune +50)
+- Equihash96_5: 10200 S/s
 
 #### AMD R9 290X
-Equihash200_9: 311 S/s
+- Equihash200_9: 311 S/s
 
 #### AMD RX 480
-Equihash200_9: 290 S/s
-Equihash192_7: 9 S/s
-Equihash96_5: 7700 S/s
+- Equihash200_9: 290 S/s
+- Equihash192_7: 9 S/s
+- Equihash96_5: 7700 S/s
 
 #### NVidia GTX 1080
-Equihash192_7: 8 S/s
-Equihash96_5: 7400 S/s
+- Equihash192_7: 8 S/s
+- Equihash96_5: 7400 S/s
 
 
 ## Usage:
 Run from the archive root directory:
 ```
-$ ./optiminer-zcash -s eu1-zcash.flypool.org:3333 -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password -a equihash200_9
+$ ./optiminer-equihash -s eu1-zcash.flypool.org:3333 -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password -a equihash200_9
 ```
 
 For a list of all options run with `-h`:
 ```
-$ ./optiminer-zcash -h
+$ ./optiminer-equihash -h
 ```
 
-There are also 'mine_zcash.sh', 'mine_zero.sh' and 'mine_mnx.sh' <!--and 'start.bat'--> scripts for running it under
-<!--Windows and --> Unix. Just edit the pool and user settings before running!
+There are also 'mine_zcash.sh', 'mine_zero.sh' and 'mine_mnx.sh' <!--and 'start.bat'--> scripts for running it under <!--Windows and --> Unix. Just edit the pool and user settings before running!
 
 ### Secure connection
 Since version 1.0.0, the miner supports ZStratum protocol over TLS to
@@ -95,7 +94,8 @@ with some pools, e.g., flypool and supernova.
 
 Use `zstratum+tls://` as prefix to the pool address, e.g.,
 ```
-$ ./optiminer-zcash -s zstratum+tls://eu1-zcash.flypool.org:3443 -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password -a equihash200_9
+$ ./optiminer-equihash -s zstratum+tls://eu1-zcash.flypool.org:3443 -a equihash200_9 \
+                       -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password 
 ```
 
 ## Troubleshooting
@@ -124,7 +124,7 @@ sudo apt-get install libstdc++6
 ```
 
 ### Failed to read bin/XXX.bin
-You need to run the miner from the directroy where optiminer-zcash is in
+You need to run the miner from the directroy where optiminer-equihash is in
 otherwise it will not find the opencl kernel.
 
 ### libOpenCL.so.1 cannot open object
