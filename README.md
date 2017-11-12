@@ -23,9 +23,12 @@ or more cards into a rig!
 ## v2.0.0
 [Download Linux 64bit](https://github.com/Optiminer/OptiminerEquihash/raw/master/optiminer-equihash-2.0.0.tar.gz)
 
+`optiminer-equihash-2.0.0.tar.gz sha256sum 8d6617b070b4ea23e106e8e9627731b3dee62fc85606414d27e0521506182f3f`
+
 <!--
 [Download Windows 64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.7.0.zip)
 -->
+
 
 
 ### Recommended Drivers
