@@ -7,6 +7,7 @@ GPU miner for Equihash supporting many coins. A (probably incomplete) list:
 - **Zero** (-a equihash192_7)
 - **Minexcoin** (-a equihash96_5)
 - **Kommodo** (-a equihash200_9)
+- **BitcoinZ** (-a equihash200_9)
 
 This is a replacement for the previous versions of separate miners for Zcash and Zero.
 Unifying all three variants of Equihash used by different coins ([N,K]=[200,9] / [192,7] / [96,6])
