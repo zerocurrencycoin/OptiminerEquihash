@@ -22,7 +22,7 @@ Due to the high solution rates achieved with equihash96_5 the CPU demans are hig
 or more cards into a rig!
 
 ## v2.1.0
-[Download Linux 64bit](https://github.com/Optiminer/OptiminerEquihash/raw/master/optiminer-equihash-2.0.0.tar.gz)
+[Download Linux 64bit](https://github.com/Optiminer/OptiminerEquihash/raw/master/optiminer-equihash-2.1.0.tar.gz)
 
 `optiminer-equihash-2.1.0.tar.gz sha256sum 3e5df884b109474a0727e0a04926d8516ee22bac5e811222ea710e16d811dc5f
 
