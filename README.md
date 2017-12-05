@@ -21,10 +21,10 @@ Note that depending on the Equihash parameters the amount of GPU memory needed v
 Due to the high solution rates achieved with equihash96_5 the CPU demans are higher. Take this into account when putting 5 
 or more cards into a rig!
 
-## v2.0.0
+## v2.1.0
 [Download Linux 64bit](https://github.com/Optiminer/OptiminerEquihash/raw/master/optiminer-equihash-2.0.0.tar.gz)
 
-`optiminer-equihash-2.0.0.tar.gz sha256sum 8d6617b070b4ea23e106e8e9627731b3dee62fc85606414d27e0521506182f3f`
+`optiminer-equihash-2.1.0.tar.gz sha256sum 
 
 <!--
 [Download Windows 64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.7.0.zip)
@@ -160,6 +160,12 @@ slower implementation that also runs on older drivers.
 - Reboot. 
 
 ## Changelog
+- [2.1.0] Remove --pci-mode flag.
+- [2.1.0] Add flag to specify CA certificate.
+- [2.1.0] Lower CPU utilization for solution processing.
+- [2.1.0] Allow to run on older Nvidia cards (>=SM target 32).
+- [2.1.0] Allow to run on older AMD cards.
+- [2.1.0] Fix problems when CPU is not fast enough.
 - [2.0.0] Dev fee lowered to 1%.
 - [2.0.0] Added equihash96_5 for Minexcoin.
 - [2.0.0] Unified miner for Zero and Zcash.
