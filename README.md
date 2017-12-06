@@ -22,9 +22,10 @@ Due to the high solution rates achieved with equihash96_5 the CPU demans are hig
 or more cards into a rig!
 
 ## v2.1.0
-[Download Linux 64bit](https://github.com/Optiminer/OptiminerEquihash/raw/master/optiminer-equihash-2.1.0.tar.gz)
+[Download Linux
+64bit](https://github.com/Optiminer/OptiminerEquihash/raw/master/optiminer-equihash-2.1.1.tar.gz)
 
-`optiminer-equihash-2.1.0.tar.gz sha256sum 3e5df884b109474a0727e0a04926d8516ee22bac5e811222ea710e16d811dc5f
+`optiminer-equihash-2.1.1.tar.gz sha256sum 230d7fc052ccb89f0a793f49e74ae549fa782128275455aff0fc08942a949dca
 
 <!--
 [Download Windows 64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.7.0.zip)
@@ -160,6 +161,9 @@ slower implementation that also runs on older drivers.
 - Reboot. 
 
 ## Changelog
+- [2.1.1] Link libstdc++ statically.
+- [2.1.1] Support older CUDA versions.
+- [2.1.1] Fix Capeverde bug.
 - [2.1.0] Remove --pci-mode flag.
 - [2.1.0] Add flag to specify CA certificate.
 - [2.1.0] Lower CPU utilization for solution processing.
