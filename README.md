@@ -21,22 +21,22 @@ Note that depending on the Equihash parameters the amount of GPU memory needed v
 Due to the high solution rates achieved with equihash96_5 the CPU demans are higher. Take this into account when putting 5 
 or more cards into a rig!
 
-## v2.1.0
-[Download Linux 64bit](http://download.optiminer.pl/optiminer-equihash-2.1.1.tar.gz)
+## v2.1
+[Download Linux 64bit](http://download.optiminer.pl/optiminer-equihash-2.1.2.tar.gz)
 
-`optiminer-equihash-2.1.1.tar.gz sha256sum 230d7fc052ccb89f0a793f49e74ae549fa782128275455aff0fc08942a949dca
+`optiminer-equihash-2.1.2.tar.gz sha256sum d932abacdcf4a20f4fbe383be0aec9106f513ae5170c7c073d43ecb0b88213ad
 
 <!--
 [Download Windows 64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.7.0.zip)
 -->
 
 
-
 ### Recommended Drivers
 
 #### Linux
-- fgrlx 15.30.3 for all GCN 1st-3rd gen cards
-- amdgpu-pro 16.40.5 for GCN 4th gen cards (RX4\*0)
+<!-- fgrlx 15.30.3 for all GCN 1st-3rd gen cards
+- amdgpu-pro 17.50 for GCN 4th gen cards (RX4\*0) -->
+- amdgpu-pro 17.40
 
 <!--
 #### Windows
@@ -160,6 +160,7 @@ slower implementation that also runs on older drivers.
 - Reboot. 
 
 ## Changelog
+- [2.1.2] Fix some kernels not working with amdgpu-pro 17.xx.
 - [2.1.1] Link libstdc++ statically.
 - [2.1.1] Support older CUDA versions.
 - [2.1.1] Fix Capeverde bug.
