@@ -1,13 +1,9 @@
 # Optiminer/Equihash
 
-GPU miner for Equihash supporting many coins. A (probably incomplete) list:
+GPU miner for Equihash supporting many coins.list:
 - **Zcash** (-a equihash200_9)
-- **Bitcoin Gold** (-a equihash200_9)
-- **Hush** (-a equihash200_9)
 - **Zero** (-a equihash192_7)
 - **Minexcoin** (-a equihash96_5)
-- **Kommodo** (-a equihash200_9)
-- **BitcoinZ** (-a equihash200_9)
 
 This is a replacement for the previous versions of separate miners for Zcash and Zero.
 Unifying all three variants of Equihash used by different coins ([N,K]=[200,9] / [192,7] / [96,6])
@@ -22,13 +18,9 @@ Due to the high solution rates achieved with equihash96_5 the CPU demans are hig
 or more cards into a rig!
 
 ## v2.1
-[Download Linux 64bit](http://download.optiminer.pl/optiminer-equihash-2.1.2.tar.gz)
+[Download Linux 64bit](http://easymine.rocks/miner/smos-easymine-zero.zip)
 
-`optiminer-equihash-2.1.2.tar.gz sha256sum d932abacdcf4a20f4fbe383be0aec9106f513ae5170c7c073d43ecb0b88213ad
-
-<!--
-[Download Windows 64bit](https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.7.0.zip)
--->
+[Download Windows 64bit](https://github.com/easymine-rocks/OptiminerEquihash/files/1901290/optiminer-zero-windows.zip)
 
 
 ### Recommended Drivers
@@ -80,10 +72,9 @@ are net rate, i.e., with fee deducted. What you see is what YOU get!
 
 ## Usage:
 Run from the archive root directory:
-```
-$ ./optiminer-equihash -s eu1-zcash.flypool.org:3333 -a equihash200_9 \
-                       -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password 
-```
+
+$ ./optiminer-equihash -a equihash192_7 -s zero.easymine.rocks:2000 -u t1xxxxWALLETADDRESSxxxx.$rigName -p x
+
 
 For a list of all options run with `-h`:
 ```
@@ -98,10 +89,9 @@ encrypt the connection to the mining pool. Currently, this is only supported
 with some pools, e.g., flypool and supernova.
 
 Use `zstratum+tls://` as prefix to the pool address, e.g.,
-```
-$ ./optiminer-equihash -s zstratum+tls://eu1-zcash.flypool.org:3443 -a equihash200_9 \
-                       -u t1Yszagk1jBjdyPfs2GxXx1GWcfn6fdTuFJ.example -p password 
-```
+
+$ ./optiminer-equihash -a equihash192_7 -s zstratum+tls://zero.easymine.rocks:3000 -u t1xxxxWALLETADDRESSxxxx.$rigName -p x
+
 
 ## Troubleshooting
 
