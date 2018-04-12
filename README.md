@@ -5,6 +5,8 @@ GPU miner for Equihash supporting many coins.list:
 - **Zero** (-a equihash192_7)
 - **Minexcoin** (-a equihash96_5)
 
+This miner can be installed EASILY with SMOS simplemining.net as the miner is included as an option in their platform.  Please see connection strings below.
+
 This is a replacement for the previous versions of separate miners for Zcash and Zero.
 Unifying all three variants of Equihash used by different coins ([N,K]=[200,9] / [192,7] / [96,6])
 into a single binary simplifies further development on all variants. 
